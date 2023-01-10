@@ -20,24 +20,24 @@ public class BaseClass {
 	public WebDriver_Utility utils;
 	@Parameters("browser")
 	@BeforeClass(groups={"smoke","regression"})
-//	public void launchingBrowser()
-//	{	
-//		driver=new ChromeDriver();
-	public void LaunchBrowser(String browser)
-	{
-		if(browser.equals("chrome"))
-		{
-			driver=new ChromeDriver();
-		}
-		else if(browser.equals("firefox"))
-		{
-			driver=new FirefoxDriver();
-		}
-		else
-		{
-			driver= new EdgeDriver();
-		}
-		
+	public void launchingBrowser()
+	{	
+		driver=new ChromeDriver();
+//	public void LaunchBrowser(String browser)
+//	{
+//		if(browser.equals("chrome"))
+//		{
+//			driver=new ChromeDriver();
+//		}
+//		else if(browser.equals("firefox"))
+//		{
+//			driver=new FirefoxDriver();
+//		}
+//		else
+//		{
+//			driver= new EdgeDriver();
+//		}
+//		
 		utils = new WebDriver_Utility(driver);
 		utils.waitForPageLoad();
 		utils.maximizewindow();	
