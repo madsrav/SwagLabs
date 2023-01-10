@@ -17,7 +17,7 @@ public class TC_002_Print_All_Products_Test extends BaseClass {
 		{
 			System.out.println(allelements.getText());
 		}
-		System.out.println("verified");
+		System.out.println("not verified");
 		
 	}
 }
