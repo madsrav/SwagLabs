@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.demo.SwagLabs.generic.BaseClass;
 
 public class TC_002_Print_All_Products_Test extends BaseClass {
-	@Test
+	@Test(groups="regression")
 	public void print_All_Products_Test()
 	{
 		List<WebElement> elements= driver.findElements(By.xpath("//div[@class='inventory_item_description']/div/a"));

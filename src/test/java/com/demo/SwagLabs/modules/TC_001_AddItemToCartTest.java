@@ -11,7 +11,7 @@ import objectRepository.Your_Cart;
 
 public class TC_001_AddItemToCartTest extends BaseClass 
 {
-	@Test
+	@Test(groups="smoke")
 	public void addItemToCartTest() throws InterruptedException
 	{
 		Home_Page hp = new Home_Page(driver);
